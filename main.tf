@@ -1,7 +1,7 @@
 provider "google" {
   project     = "var.project_id"
   region      = "var.location"
-  credentials = "C:\\Users\\bhara\\AppData\\Local\\bharat\\cloud_gcp\\practice\\practice-project-1-credentials.json"
+  credentials = "credentials.json"
 }
 
 resource "google_storage_bucket" "my_bucket" {
