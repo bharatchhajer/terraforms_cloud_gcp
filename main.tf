@@ -1,7 +1,7 @@
 provider "google" {
-  project     = "var.project_id"
-  region      = "var.location"
-  credentials = "credentials.json"
+  project     = var.project_id
+  region      = var.location
+  credentials = file("credentials.json")
 }
 
 resource "google_storage_bucket" "my_bucket" {
